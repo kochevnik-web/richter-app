@@ -1,3 +1,10 @@
+// Vars
+
+$black: #000;
+$white: #FFF;
+$green: #05A58B;
+$blue: #014990;
+
 * {
     margin: 0;
     padding: 0;
@@ -8,12 +15,107 @@ footer {
     margin: 0;
 }
 
-#root {
-    min-height: 100vh;
+.App {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
+.font-600 {
+    font-weight: 600;
+}
+
+.font-700 {
+    font-weight: 700;
+}
+
+.title {
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+}
+
+.btn {
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    cursor: pointer;
+
+    &.btn-blue {
+        background-color: $blue;
+        color: $white;
+    }
 }
 
 .start {
     width: 100%;
     min-height: 100vh;
     opacity: 0;
+    padding: 0 0 20em 0;
+    background: url(./img/bg.png) no-repeat center center;
+    background-size: cover;
+    position: relative;
+
+    &-content {
+        padding: 6.4em 0 0 37em;
+    }
+
+    &-subtitle {
+        color: $green;
+        text-transform: uppercase;
+        margin-bottom: 1.1em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 35.5em 0 0;
+
+        span {
+            font-size: 3em;
+        }
+
+        img {
+            display: block;
+            width: 25.1em;
+            height: 3.7em;
+        }
+    }
+
+    &-title {
+        color: $blue;
+        width: 55em;
+        margin-bottom: 59.5em;
+
+        span {
+            font-size: 7em;
+        }
+    }
+
+    &-text {
+        color: $blue;
+        line-height: 4.524em;
+        width: 96em;
+        margin-bottom: 2em;
+
+        span {
+            font-size: 2.6em;
+        }
+    }
+
+    &-girl {
+        position: absolute;
+    }
+
+    .btn {
+        height: 7.3em;
+        width: 58em;
+
+        span {
+            font-size: 3.2em;
+        }
+    }
 }
