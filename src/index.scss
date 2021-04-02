@@ -48,7 +48,14 @@ footer {
 
     &.btn-blue {
         background-color: $blue;
+        border: 0.4em solid $blue;
         color: $white;
+        transition: color .275s ease-out, background-color .275s ease-out;
+
+        &:hover{
+            background-color: $white;
+            color: $blue;
+        }
     }
 }
 

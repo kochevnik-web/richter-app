@@ -11,7 +11,7 @@ export default function Start() {
 
     useEffect(() => {
         gsap.to(start, {
-            duration: 0.8,
+            duration: 1.2,
             opacity: 1,
             ease: "power3.inOut"
         });
