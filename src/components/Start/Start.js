@@ -13,6 +13,8 @@ import flower_15 from './img/flower-15.svg';
 export default function Start() {
 
     let start = useRef(null);
+    let subTitle = useRef(null);
+    let title = useRef(null);
     let fl_1 = useRef(null);
     let fl_3 = useRef(null);
     let fl_15 = useRef(null);
@@ -41,6 +43,14 @@ export default function Start() {
             ease: "linear",
             repeat: -1
         });
+
+        setTimeout(() => {
+            subTitle.classList.add('fadeInUp');
+        }, 300);
+
+        setTimeout(() => {
+            title.classList.add('fadeInUp');
+        }, 500);
     }, []);
 
     const girlsList = girls.map(el => {
@@ -69,10 +79,10 @@ export default function Start() {
         <div className="start" ref={el => (start = el)}>
             <div className="start-content">
                 <div className="start-subtitle title">
-                    <span>Спецпроект</span>
+                    <span ref={el => (subTitle = el)}>Спецпроект</span>
                     <img src={logo} alt="Гедеон Рихтер"/>
                 </div>
-                <div className="start-title title">
+                <div className="start-title title" ref={el => (title = el)}>
                     <span>Как устроены женщины?</span>
                 </div>
                 <div className="start-text">

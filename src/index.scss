@@ -59,6 +59,24 @@ footer {
     }
 }
 
+.fadeInUp {
+    opacity: 0;
+    animation: 1s ease-out .5s fadeInUp;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(.19,1,.22,1);
+}
+
+@keyframes fadeInUp{
+    from {
+        transform: translate3d(0, 100px,0)
+    }
+    
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
 .start {
     width: 100%;
     min-height: 100vh;
@@ -96,6 +114,7 @@ footer {
         color: $blue;
         width: 55em;
         margin-bottom: 59.5em;
+        opacity: 0;
 
         span {
             font-size: 7em;
