@@ -7,7 +7,8 @@ export default function ContextProvider({ children }) {
     function getEm(){return window.innerWidth / 192}
 
     function getIsMobile(){
-        return window.innerWidth < window.innerHeight &&  window.innerWidth < 768 ? true : false;
+        console.log(window.innerWidth);
+        return window.innerWidth < window.innerHeight && window.innerWidth < 768 ? true : false;
     }
 
     const defaultEm = window.innerWidth <= 768 ? 1.731707 : 2.17734;

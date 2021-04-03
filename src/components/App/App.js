@@ -8,8 +8,14 @@ function App() {
 
   const {em, isMobile} = useContext(Context);
 
+  let clx = ['App'];
+
+  if (isMobile) {
+    clx.push('app-mobile');
+  }
+
   return (
-    <div className="App" style={{fontSize: em}}>
+    <div className={clx.join(' ')} style={{fontSize: em}}>
       <Start />
     </div>
   );
