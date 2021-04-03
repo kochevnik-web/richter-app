@@ -4,16 +4,42 @@ import gsap from 'gsap';
 import logo from './img/logo.svg';
 
 import girls from './girls.data';
+import flowers from './flowers.data';
+
+import flower_1 from './img/flower-1.svg';
+import flower_3 from './img/flower-3.svg';
+import flower_15 from './img/flower-15.svg';
 
 export default function Start() {
 
     let start = useRef(null);
+    let fl_1 = useRef(null);
+    let fl_3 = useRef(null);
+    let fl_15 = useRef(null);
 
     useEffect(() => {
         gsap.to(start, {
             duration: 1.2,
             opacity: 1,
             ease: "power3.inOut"
+        });
+        gsap.to(fl_1, {
+            rotation:"360",
+            duration: 35,
+            ease: "linear",
+            repeat: -1
+        });
+        gsap.to(fl_3, {
+            rotation:"-=360",
+            duration: 35,
+            ease: "linear",
+            repeat: -1
+        });
+        gsap.to(fl_15, {
+            rotation:"360",
+            duration: 35,
+            ease: "linear",
+            repeat: -1
         });
     }, []);
 
@@ -25,7 +51,19 @@ export default function Start() {
                 alt="Гедеон Рихтер"
                 style={{width: el.w + 'em', height: el.h + 'em', top: el.t + 'em', left: el.l + 'em',}}
             />
-    })
+    });
+
+    const flowersList = flowers.map((el, idx) =>{
+        return (
+            <img
+                key={idx}
+                src={el.src}
+                className="start-flower"
+                alt="Гедеон Рихтер"
+                style={{width: el.w + 'em', height: el.h + 'em', top: el.t + 'em', left: el.l + 'em',}}
+            />
+        );
+    });
 
     return (
         <div className="start" ref={el => (start = el)}>
@@ -46,6 +84,12 @@ export default function Start() {
                     </div>
                 </div>
                 {girlsList}
+                <div className="start-flowers">
+                    <img className="start-flower" src={flower_1} alt="Гедеон Рихтер" ref={el => (fl_1 = el)} />
+                    <img className="start-flower" src={flower_3} alt="Гедеон Рихтер" ref={el => (fl_3 = el)} />
+                    <img className="start-flower" src={flower_15} alt="Гедеон Рихтер" ref={el => (fl_15 = el)} />
+                    {flowersList}
+                </div>
             </div>
         </div>
     )
