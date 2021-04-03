@@ -160,6 +160,7 @@ footer {
         height: 100%;
         top: 0;
         left: 0;
+        overflow: hidden;
     }
 
     &-flower {
@@ -194,6 +195,14 @@ footer {
             top: 148.2em;
             z-index: 101;
         }
+
+        &:nth-child(5) {
+            width: 15.3em;
+            height: 13em;
+            left: 41.4em;
+            top: 149.5em;
+            z-index: 101;
+        }
     }
 
     #path-1 {
@@ -202,6 +211,14 @@ footer {
         left: 52em;
         width: 158em;
         transform: rotate(-21deg);
+    }
+
+    #path-2 {
+        position: absolute;
+        top: 45.5em;
+        left: -48em;
+        width: 110em;
+        transform: rotate(-146deg);
     }
 
     .btn {
