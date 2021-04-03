@@ -86,6 +86,20 @@ footer {
     background-size: cover;
     position: relative;
 
+    svg {
+        overflow: visible;
+        height: 100%;
+        
+        /* Fix Safari rendering bug */
+        transform: translateZ(0);
+    }
+
+    path {
+        // stroke-width: 2;
+        // stroke: gray;
+        fill: transparent;
+    }
+
     &-content {
         padding: 6.4em 0 0 37em;
     }
@@ -101,6 +115,7 @@ footer {
 
         span {
             font-size: 3em;
+            opacity: 0;
         }
 
         img {
@@ -114,10 +129,13 @@ footer {
         color: $blue;
         width: 55em;
         margin-bottom: 59.5em;
-        opacity: 0;
 
         span {
             font-size: 7em;
+            opacity: 0;
+            display: inline-block;
+            z-index: 2;
+            position: relative;
         }
     }
 
@@ -168,6 +186,22 @@ footer {
             left: 152em;
             top: 137em;
         }
+
+        &:nth-child(4) {
+            width: 9.2em;
+            height: 10em;
+            left: 61.4em;
+            top: 148.2em;
+            z-index: 101;
+        }
+    }
+
+    #path-1 {
+        position: absolute;
+        top: 43.5em;
+        left: 52em;
+        width: 158em;
+        transform: rotate(-21deg);
     }
 
     .btn {
