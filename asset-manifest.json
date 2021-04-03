@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/richter-app/static/css/main.05eebf62.chunk.css",
-    "main.js": "/richter-app/static/js/main.3637087a.chunk.js",
-    "main.js.map": "/richter-app/static/js/main.3637087a.chunk.js.map",
+    "main.css": "/richter-app/static/css/main.78031a23.chunk.css",
+    "main.js": "/richter-app/static/js/main.fb6f777a.chunk.js",
+    "main.js.map": "/richter-app/static/js/main.fb6f777a.chunk.js.map",
     "runtime-main.js": "/richter-app/static/js/runtime-main.e8089a85.js",
     "runtime-main.js.map": "/richter-app/static/js/runtime-main.e8089a85.js.map",
     "static/js/2.8b5d2289.chunk.js": "/richter-app/static/js/2.8b5d2289.chunk.js",
     "static/js/2.8b5d2289.chunk.js.map": "/richter-app/static/js/2.8b5d2289.chunk.js.map",
     "index.html": "/richter-app/index.html",
-    "static/css/main.05eebf62.chunk.css.map": "/richter-app/static/css/main.05eebf62.chunk.css.map",
+    "static/css/main.78031a23.chunk.css.map": "/richter-app/static/css/main.78031a23.chunk.css.map",
     "static/js/2.8b5d2289.chunk.js.LICENSE.txt": "/richter-app/static/js/2.8b5d2289.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/richter-app/static/media/bg.1b17647e.png",
     "static/media/flower-1.475501cf.svg": "/richter-app/static/media/flower-1.475501cf.svg",
@@ -19,6 +19,7 @@
     "static/media/flower-14.1c5f698b.svg": "/richter-app/static/media/flower-14.1c5f698b.svg",
     "static/media/flower-15.552e24cd.svg": "/richter-app/static/media/flower-15.552e24cd.svg",
     "static/media/flower-16.53278c91.svg": "/richter-app/static/media/flower-16.53278c91.svg",
+    "static/media/flower-17.7a57b6b8.svg": "/richter-app/static/media/flower-17.7a57b6b8.svg",
     "static/media/flower-2.4647796b.svg": "/richter-app/static/media/flower-2.4647796b.svg",
     "static/media/flower-3.09a4a0a5.svg": "/richter-app/static/media/flower-3.09a4a0a5.svg",
     "static/media/flower-4.18ce22c5.svg": "/richter-app/static/media/flower-4.18ce22c5.svg",
@@ -36,7 +37,7 @@
   "entrypoints": [
     "static/js/runtime-main.e8089a85.js",
     "static/js/2.8b5d2289.chunk.js",
-    "static/css/main.05eebf62.chunk.css",
-    "static/js/main.3637087a.chunk.js"
+    "static/css/main.78031a23.chunk.css",
+    "static/js/main.fb6f777a.chunk.js"
   ]
 }
