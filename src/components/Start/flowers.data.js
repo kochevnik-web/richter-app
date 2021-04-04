@@ -14,87 +14,153 @@ import flower_14 from './img/flower-14.svg';
 const flowers = [
     {
         src: flower_2,
-        w: 8.9,
-        h: 9.1,
-        l: 25,
-        t: 4
+        mobile: true,
+        styleMobile: {
+            width: '8.9em',
+            height: '9.1em',
+            left: 0,
+            top: 0
+        },
+        style: {
+            width: '8.9em',
+            height: '9.1em',
+            left: '25em',
+            top: '4em'
+        },
     },
     {
         src: flower_4,
-        w: 10.7,
-        h: 11.4,
-        l: 104.5,
-        t: 8.5
+        mobile: true,
+        styleMobile: {
+            width: '8.9em',
+            height: '9.1em',
+            left: 0,
+            top: 0
+        },
+        style: {
+            width: '10.7em',
+            height: '11.4em',
+            left: '104.5em',
+            top: '8.5em'
+        },
     },
     {
         src: flower_5,
-        w: 17.8,
-        h: 18.0,
-        l: 157,
-        t: 5.5
+        mobile: false,
+        style: {
+            width: '17.8em',
+            height: '18.0em',
+            left: '157em',
+            top: '5.5em'
+        },
     },
     {
         src: flower_6,
-        w: 23.9,
-        h: 23.1,
-        l: 63,
-        t: 39
+        mobile: true,
+        styleMobile: {
+            width: '8.9em',
+            height: '9.1em',
+            left: 0,
+            top: 0
+        },
+        style: {
+            width: '23.9em',
+            height: '23.1em',
+            left: '63em',
+            top: '39em'
+        },
     },
     {
         src: flower_7,
-        w: 23.8,
-        h: 22.1,
-        l: 166,
-        t: 28
+        mobile: true,
+        styleMobile: {
+            width: '8.9em',
+            height: '9.1em',
+            left: 0,
+            top: 0
+        },
+        style: {
+            width: '23.8em',
+            height: '22.1em',
+            left: '166em',
+            top: '28em'
+        },
     },
     {
         src: flower_8,
-        w: 21.2,
-        h: 23,
-        l: 12.3,
-        t: 51
+        mobile: false,
+        style: {
+            width: '21.2em',
+            height: '23em',
+            left: '12.3em',
+            top: '51em'
+        },
     },
     {
         src: flower_9,
-        w: 14.5,
-        h: 13.5,
-        l: 171,
-        t: 66
+        mobile: false,
+        style: {
+            width: '14.5em',
+            height: '13.5em',
+            left: '171em',
+            top: '66em'
+        },
     },
     {
         src: flower_10,
-        w: 16.5,
-        h: 15.1,
-        l: 4.2,
-        t: 85
+        mobile: false,
+        style: {
+            width: '16.5em',
+            height: '15.1em',
+            left: '4.2em',
+            top: '85em'
+        },
     },
     {
         src: flower_11,
-        w: 21.2,
-        h: 19.2,
-        l: 126.2,
-        t: 76
+        mobile: true,
+        styleMobile: {
+            width: '8.9em',
+            height: '9.1em',
+            left: 0,
+            top: 0
+        },
+        style: {
+            width: '21.2em',
+            height: '19.2em',
+            left: '126.2em',
+            top: '76em'
+        },
     },
     {
         src: flower_12,
-        w: 30.9,
-        h: 27.3,
-        l: 96,
-        t: 134
+        module: false,
+        style: {
+            width: '30.9em',
+            height: '27.3em',
+            left: '96em',
+            top: '134em'
+        },
     },
     {
         src: flower_13,
-        w: 15.8,
-        h: 17.9,
-        l: 131,
-        t: 144.3
+        module: false,
+        style: {
+            width: '15.8em',
+            height: '17.9em',
+            left: '131em',
+            top: '144.3em'
+        },
     },
     {
         src: flower_14,
-        w: 10.4,
-        h: 9.8,
-        l: 175.8,
-        t: 146.1
+        module: false,
+        style: {
+            width: '10.4em',
+            height: '9.8em',
+            left: '175.8em',
+            top: '146.1em'
+        },
     },
 ];
 
