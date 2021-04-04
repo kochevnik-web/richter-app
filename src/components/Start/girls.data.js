@@ -6,31 +6,49 @@ import girl_4 from './img/girl-4.svg';
 const girls = [
     {
         src: girl_1,
-        w: 91.7,
-        h: 52.4,
-        t: 35,
-        l: 16.8,
+        mobile: false,
+        style: {
+            width: '91.7em',
+            height: '52.4em',
+            top: '35em',
+            left: '16.8em'
+        }
     },
     {
         src: girl_2,
-        w: 58.4,
-        h: 64.3,
-        t: 11.5,
-        l: 113.8,
+        mobile: true,
+        styleMobile: {
+            width: '100%',
+            height: 'auto',
+            top: 0,
+            left: 0,
+        },
+        style: {
+            width: '58.4em',
+            height: '64.3em',
+            top: '11.5em',
+            left: '113.8em'
+        }
     },
     {
         src: girl_3,
-        w: 36.8,
-        h: 60.2,
-        t: 100.5,
-        l: 0,
+        mobile: false,
+        style: {
+            width: '36.8em',
+            height: '60.2em',
+            top: '100.5em',
+            left: 0,
+        }
     },
     {
         src: girl_4,
-        w: 53.3,
-        h: 62.4,
-        t: 77,
-        l: 136.5,
+        mobile: false,
+        style: {
+            width: '53.3em',
+            height: '62.4em',
+            top: '77em',
+            left: '136.5em',
+        }
     }
 ];
 

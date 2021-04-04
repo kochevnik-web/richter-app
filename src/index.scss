@@ -239,7 +239,7 @@ footer {
         background-size: inherit;
 
         &-content {
-            padding: 0 9em;
+            padding: 0 1.5em;
             position: relative;
         }
 
@@ -249,14 +249,14 @@ footer {
             padding: 0;
 
             span {
-                font-size: 10.79em; //18px
+                font-size: 1.8em;
             }
 
             img {
                 position: absolute;
-                width: 82.199em; //137px
-                height: 13.199em; //22px
-                top: 10em; //22px
+                width: 13.7em;
+                height: 2.2em;
+                top: 2.2em;
                 right: 0;
             }
         }
@@ -266,26 +266,26 @@ footer {
             text-align: center;
 
             span {
-                font-size: 22.79em; //38px
+                font-size: 3.8em;
             }
         }
 
         &-text {
             width: 100%;
-            line-height: 14.699em;
+            line-height: 2.45em;
 
             span {
-                font-size: 8.399em; //14px
+                font-size: 1.4em;
             }
         }
 
         .btn {
             width: 100%;
-            height: 28.199em; //47px
+            height: 4.7em;
             border-radius: 5em;
 
             span {
-                font-size: 12em; //20px
+                font-size: 2em;
             }
         }
     }

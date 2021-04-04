@@ -1,4 +1,4 @@
-import React, {useRef, useEffect, useState} from 'react';
+import React, {useRef, useEffect, useState, useContext} from 'react';
 import gsap from 'gsap';
 import MotionPathPlugin from 'gsap/MotionPathPlugin';
 
@@ -6,6 +6,8 @@ import logo from './img/logo.svg';
 
 import girls from './girls.data';
 import flowers from './flowers.data';
+
+import { Context } from "../../context";
 
 import flower_1 from './img/flower-1.svg';
 import flower_3 from './img/flower-3.svg';
@@ -16,6 +18,8 @@ import flower_17 from './img/flower-17.svg';
 export default function Start() {
 
     gsap.registerPlugin(MotionPathPlugin);
+
+    const {isMobile} = useContext(Context);
 
     const [startGame, setStartGame] = useState(false);
     const [fide_1, setFide_1] = useState(false);
@@ -112,13 +116,13 @@ export default function Start() {
     },[startGame])
 
     const girlsList = girls.map(el => {
-        return <img
+        return !el.mobile && isMobile ? null : (<img
                 key={el.src}
                 src={el.src}
                 className="start-girl"
                 alt="Гедеон Рихтер"
-                style={{width: el.w + 'em', height: el.h + 'em', top: el.t + 'em', left: el.l + 'em',}}
-            />
+                style={isMobile ? el.styleMobile : el.style}
+            />);
     });
 
     const flowersList = flowers.map((el, idx) =>{

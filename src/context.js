@@ -4,10 +4,15 @@ const Context = React.createContext();
 
 export default function ContextProvider({ children }) {
 
-    function getEm(){return window.innerWidth / 192}
+    function getEm(){
+        if(window.innerWidth < window.innerHeight && window.innerWidth < 768){
+            return window.innerWidth / 192 * 6;
+        }else{
+            return window.innerWidth / 192;
+        }
+    }
 
     function getIsMobile(){
-        console.log(window.innerWidth);
         return window.innerWidth < window.innerHeight && window.innerWidth < 768 ? true : false;
     }
 
