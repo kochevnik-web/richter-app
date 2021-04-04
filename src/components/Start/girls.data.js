@@ -20,7 +20,7 @@ const girls = [
         styleMobile: {
             width: '100%',
             height: 'auto',
-            top: 0,
+            top: '26.6em',
             left: 0,
         },
         style: {

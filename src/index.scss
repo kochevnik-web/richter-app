@@ -77,6 +77,7 @@ footer {
     }
 }
 
+//start
 .start {
     width: 100%;
     min-height: 100vh;
@@ -122,6 +123,8 @@ footer {
             display: block;
             width: 25.1em;
             height: 3.7em;
+            position: relative;
+            z-index: 1;
         }
     }
 
@@ -233,13 +236,15 @@ footer {
     }
 }
 
+//start monile
 .app-mobile {
     .start {
         background: url(./img/bg.png) no-repeat top left;
-        background-size: inherit;
+        background-size: cover;
+        padding: 0;
 
         &-content {
-            padding: 0 1.5em;
+            padding: 13em 1.5em 0;
             position: relative;
         }
 
@@ -247,6 +252,7 @@ footer {
             justify-content: center;
             position: relative;
             padding: 0;
+            margin-bottom: 1.8px;
 
             span {
                 font-size: 1.8em;
@@ -256,7 +262,7 @@ footer {
                 position: absolute;
                 width: 13.7em;
                 height: 2.2em;
-                top: 2.2em;
+                top: -11em;
                 right: 0;
             }
         }
@@ -264,6 +270,7 @@ footer {
         &-title {
             width: 100%;
             text-align: center;
+            margin-bottom: 38em;
 
             span {
                 font-size: 3.8em;
@@ -273,16 +280,64 @@ footer {
         &-text {
             width: 100%;
             line-height: 2.45em;
+            margin-bottom: 4.2em;
 
             span {
                 font-size: 1.4em;
             }
         }
 
+        &-button {
+            padding-bottom: 6.4em;
+        }
+
+        &-flower {
+    
+            &:nth-child(1) {
+                width: 5.5em;
+                height: 5.4em;
+                left: 14.7em;
+                top: 5.1em;
+            }
+
+            &:nth-child(2) {
+                width: 3.2em;
+                height: 3.5em;
+                left: 24em;
+                top: 106.5em;
+                z-index: 102;
+            }
+
+            &:nth-child(3) {
+                width: 5.6em;
+                height: 4.8em;
+                left: 25em;
+                top: 26em;
+            }
+
+            &:nth-child(4) {
+                width: 7.1em;
+                height: 6.6em;
+                left: 24.5em;
+                top: 110em;
+            }
+
+            &:nth-child(5) {
+                width: 7.5em;
+                height: 6.8em;
+                left: 1.5em;
+                top: 104.5em;
+            }
+
+            &:nth-child(7) {
+                transform: rotate(-38deg);
+            }
+        }
+
         .btn {
             width: 100%;
             height: 4.7em;
-            border-radius: 5em;
+            border-radius: 1em;
 
             span {
                 font-size: 2em;

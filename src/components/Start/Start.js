@@ -11,6 +11,8 @@ import { Context } from "../../context";
 
 import flower_1 from './img/flower-1.svg';
 import flower_3 from './img/flower-3.svg';
+import flower_9 from './img/flower-9.svg';
+import flower_10 from './img/flower-10.svg';
 import flower_15 from './img/flower-15.svg';
 import flower_16 from './img/flower-16.svg';
 import flower_17 from './img/flower-17.svg';
@@ -30,6 +32,8 @@ export default function Start() {
     let path_2 = useRef(null);
     let fl_1 = useRef(null);
     let fl_3 = useRef(null);
+    let fl_9 = useRef(null);
+    let fl_10 = useRef(null);
     let fl_15 = useRef(null);
     let fl_16 = useRef(null);
     let fl_17 = useRef(null);
@@ -45,24 +49,28 @@ export default function Start() {
             opacity: 1,
             ease: "power3.inOut"
         });
-        gsap.to(fl_1, {
-            rotation:"360",
-            duration: 35,
-            ease: "linear",
-            repeat: -1
-        });
+        if(!isMobile) {
+            gsap.to(fl_1, {
+                rotation:"360",
+                duration: 35,
+                ease: "linear",
+                repeat: -1
+            });
+        }
         gsap.to(fl_3, {
             rotation:"-=360",
             duration: 35,
             ease: "linear",
             repeat: -1
         });
-        gsap.to(fl_15, {
-            rotation:"360",
-            duration: 35,
-            ease: "linear",
-            repeat: -1
-        });
+        if(!isMobile) {
+            gsap.to(fl_15, {
+                rotation:"360",
+                duration: 35,
+                ease: "linear",
+                repeat: -1
+            });
+        }
 
     }, []);
 
@@ -80,38 +88,65 @@ export default function Start() {
     //animation flowers for button click
     useEffect(() =>{
         if(startGame) {
-            gsap.to(fl_16, {
-                duration: 2,
-                scale: 1.8,
-                ease: "power2.out",
-                motionPath:{
-                  path: path,
-                  align: path,
-                  alignOrigin: [0.5, 0.5]
-                }
-            });
-            gsap.to(fl_16, {
-                delay: 1,
-                duration: 1,
-                opacity: 0,
-                ease: "liner"
-            });
-            gsap.to(fl_17, {
-                duration: 2,
-                scale: 1.8,
-                ease: "power2.out",
-                motionPath:{
-                  path: path_2,
-                  align: path_2,
-                  alignOrigin: [0.5, 0.5]
-                }
-            });
-            gsap.to(fl_17, {
-                delay: 1,
-                duration: 1,
-                opacity: 0,
-                ease: "liner"
-            });
+            if(!isMobile){
+                gsap.to(fl_16, {
+                    duration: 2,
+                    scale: 1.8,
+                    ease: "power2.out",
+                    motionPath:{
+                      path: path,
+                      align: path,
+                      alignOrigin: [0.5, 0.5]
+                    }
+                });
+                gsap.to(fl_16, {
+                    delay: 1,
+                    duration: 1,
+                    opacity: 0,
+                    ease: "liner"
+                });
+                gsap.to(fl_17, {
+                    duration: 2,
+                    scale: 1.8,
+                    ease: "power2.out",
+                    motionPath:{
+                      path: path_2,
+                      align: path_2,
+                      alignOrigin: [0.5, 0.5]
+                    }
+                });
+                gsap.to(fl_17, {
+                    delay: 1,
+                    duration: 1,
+                    opacity: 0,
+                    ease: "liner"
+                });
+            } else {
+                gsap.to(fl_10, {
+                    duration: 1.5,
+                    scale: 3,
+                    opacity: 0,
+                    x: -200,
+                    y: -30,
+                    ease: "power3.out",
+                });
+                gsap.to(fl_16, {
+                    duration: 1.5,
+                    scale: 3,
+                    opacity: 0,
+                    x: 200,
+                    y: -300,
+                    ease: "power3.out",
+                });
+                gsap.to(fl_9, {
+                    duration: 1.5,
+                    scale: 3,
+                    opacity: 0,
+                    x: 200,
+                    y: 30,
+                    ease: "power3.out",
+                });
+            }
         }
     },[startGame])
 
@@ -126,6 +161,7 @@ export default function Start() {
             />);
     });
 
+    //Formation flower data in element
     const flowersList = flowers.map((el, idx) =>{
         return !el.mobile && isMobile ? null : (<img
                 key={idx}
@@ -158,9 +194,11 @@ export default function Start() {
                 <div className="start-flowers">
                     {!isMobile && <img className="start-flower" src={flower_1} alt="Гедеон Рихтер" ref={el => (fl_1 = el)} />}
                     <img className="start-flower" src={flower_3} alt="Гедеон Рихтер" ref={el => (fl_3 = el)} />
-                    <img className="start-flower" src={flower_15} alt="Гедеон Рихтер" ref={el => (fl_15 = el)} />
+                    {!isMobile && <img className="start-flower" src={flower_15} alt="Гедеон Рихтер" ref={el => (fl_15 = el)} />}
                     <img className="start-flower" src={flower_16} alt="Гедеон Рихтер" ref={el => (fl_16 = el)} />
                     <img className="start-flower" src={flower_17} alt="Гедеон Рихтер" ref={el => (fl_17 = el)} />
+                    {isMobile && <img className="start-flower" src={flower_9} alt="Гедеон Рихтер" ref={el => (fl_9 = el)} />}
+                    {isMobile && <img className="start-flower" src={flower_10} alt="Гедеон Рихтер" ref={el => (fl_10 = el)} />}
 
                     {flowersList}
 
