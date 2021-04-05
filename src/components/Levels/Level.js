@@ -1,29 +1,34 @@
 import React, {useEffect, useState, useRef} from 'react';
-import useScroll from '../../scroll';
+
+import gsap from 'gsap';
+import ScrollToPlugin from 'gsap/ScrollToPlugin';
 
 export default function Level({data, children}) {
 
-    let [executeScroll, elRef] = useScroll();
+    gsap.registerPlugin(ScrollToPlugin);
+
     const [startAnimation, setStartAnimation] = useState(false);
     const [clx, setClx] = useState(['level']);
+
+    let elRef = useRef(null);
 
     useEffect(() =>{
         const t = data.id === 1 ? 1500 : 0;
         setTimeout(() => {
             setStartAnimation(true);
         }, t);
-
+        
         setClx([...clx, 'show']);
     },[]);
 
     useEffect(() =>{
         if(startAnimation){
-            executeScroll();
+            gsap.to(window, {duration: 1, scrollTo: {y: elRef, offsetY: 0}});
         }
     },[startAnimation]);
 
     return (
-        <div className={clx.join(' ')} ref={elRef}>
+        <div className={clx.join(' ')} ref={el => (elRef = el)}>
             <div className="level-wrap">
                 {children}
                 <div className="q-content">

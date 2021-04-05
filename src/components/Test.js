@@ -3,7 +3,7 @@ import React from 'react'
 export default function Test() {
     return (
         <div>
-            Test 1
+            Test 2
         </div>
     )
 }
