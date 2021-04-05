@@ -3,10 +3,13 @@ import React, {useContext} from 'react';
 import { Context } from "../../context";
 
 import Start from '../Start/Start';
+import Level from '../Levels/Level';
+
+import levels from '../Levels/levels.data';
 
 function App() {
 
-  const {em, isMobile} = useContext(Context);
+  const {em, isMobile, countLevel} = useContext(Context);
 
   let clx = ['App'];
 
@@ -14,9 +17,18 @@ function App() {
     clx.push('app-mobile');
   }
 
+  const listLevels = levels.filter(el => {
+    return el.id <= countLevel;
+  }).map(el =>{
+    return <Level key={el.id} data={el} children={el.component}/>
+  });
+
   return (
     <div className={clx.join(' ')} style={{fontSize: em}}>
       <Start />
+      <div className="levels">
+        {listLevels}
+      </div>
     </div>
   );
 }

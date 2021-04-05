@@ -345,3 +345,59 @@ footer {
         }
     }
 }
+
+.level {
+    opacity: 0;
+    transition: opacity 0.275s ease-in;
+    z-index: 1;
+    position: relative;
+    padding: 4em 0;
+
+    &.show {
+        opacity: 1;
+    }
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &:nth-child(1) {
+        background: #FFCCFF;
+
+        .q-content {
+            margin-right: 15.7em;
+        }
+    }
+}
+
+.q-content {
+    width: 64.6em;
+
+    &-text {
+        color: $blue;
+        font-weight: bold;
+        line-height: 3.9em;
+
+        span {
+            font-size: 2.7em;
+        }
+    }
+
+    &-ansver {
+        color: $blue;
+        background: $white;
+        border-radius: 1.8em;
+        padding: 1.7em 3.4em;
+        line-height: 3.36em;
+        margin: 0 0 1.6em 0;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        span {
+            font-size: 2.4em;
+        }
+    }
+}

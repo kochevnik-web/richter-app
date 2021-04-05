@@ -19,6 +19,7 @@ export default function ContextProvider({ children }) {
     const defaultEm = window.innerWidth <= 768 ? 1.731707 : 2.17734;
     const [em, setEm] = useState(10);
     const [isMobile, setIsMobile] = useState(false);
+    const [countLevel, setCountLevel] = useState(0);
 
     useEffect(()=>{
         setEm(getEm());
@@ -33,7 +34,7 @@ export default function ContextProvider({ children }) {
     });
     
     return (
-        <Context.Provider value={{ defaultEm, em, isMobile }}>
+        <Context.Provider value={{ defaultEm, em, isMobile, countLevel, setCountLevel }}>
         {children}
         </Context.Provider>
     );
