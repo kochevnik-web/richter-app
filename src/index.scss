@@ -4,6 +4,8 @@ $black: #000;
 $white: #FFF;
 $green: #05A58B;
 $blue: #014990;
+$pink: #FFCCFF;
+$darkenPink: #F29FBB;
 
 * {
     margin: 0;
@@ -351,7 +353,7 @@ footer {
     transition: opacity 0.275s ease-in;
     z-index: 1;
     position: relative;
-    padding: 4em 0;
+    padding: 8em 0;
 
     &.show {
         opacity: 1;
@@ -360,13 +362,23 @@ footer {
     &-wrap {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     &:nth-child(1) {
-        background: #FFCCFF;
+        background: $pink;
 
         .q-content {
             margin-right: 15.7em;
+        }
+
+        .spiner {
+            left: 58em;
+            top: -3em;
+
+            svg {
+                fill: $darkenPink;
+            }
         }
     }
 }
@@ -392,6 +404,11 @@ footer {
         padding: 1.7em 3.4em;
         line-height: 3.36em;
         margin: 0 0 1.6em 0;
+        cursor: pointer;
+
+        &:hover {
+            background: #ececec;
+        }
 
         &:last-child {
             margin: 0;
@@ -400,5 +417,62 @@ footer {
         span {
             font-size: 2.4em;
         }
+    }
+}
+
+.rose {
+    width: 97.4em;
+    height: 74.1em;
+    position: relative;
+    margin-left: 6.3em;
+
+    &-bg {
+        width: 100%;
+        display: block;
+    }
+
+    &-item {
+        position: absolute;
+
+        &.rose-1 {
+            width: 68.6em;
+            height: 36.3em;
+            top: 31em;
+            left: 18.7em;
+        }
+
+        &.rose-2 {
+            width: 52em;
+            height: 80.2em;
+            top: -7em;
+            left: -7.3em;
+        }
+    }
+}
+
+.spiner {
+    position: absolute;
+    width: 8em;
+    height: 8em;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $blue;
+
+    svg {
+        fill: #05A58B;
+        display: block;
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    span {
+        z-index: 1;
+        font-size: 3.2em;
+        font-weight: 600;
     }
 }

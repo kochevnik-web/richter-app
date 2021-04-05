@@ -3,6 +3,8 @@ import React, {useEffect, useState, useRef} from 'react';
 import gsap from 'gsap';
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
 
+import Ansvers from './Ansvers';
+
 export default function Level({data, children}) {
 
     gsap.registerPlugin(ScrollToPlugin);
@@ -13,7 +15,7 @@ export default function Level({data, children}) {
     let elRef = useRef(null);
 
     useEffect(() =>{
-        const t = data.id === 1 ? 1500 : 0;
+        const t = data.id === 1 ? 1000 : 0;
         setTimeout(() => {
             setStartAnimation(true);
         }, t);
@@ -27,6 +29,10 @@ export default function Level({data, children}) {
         }
     },[startAnimation]);
 
+    const ansvers = data.ansvers.map((el, indx) => {
+        return <Ansvers key={indx} text={el.text}/>
+    });
+
     return (
         <div className={clx.join(' ')} ref={el => (elRef = el)}>
             <div className="level-wrap">
@@ -34,16 +40,11 @@ export default function Level({data, children}) {
                 <div className="q-content">
                     <div className="q-content-text">
                         <span>
-                            «Не подходи к ней — у нее ПМС!» Все взрослые люди слышали эту аббревиатуру, но не все знают ее значение. Так что же это такое?
+                            {data.text}
                         </span>
                     </div>
                     <div className="q-content-ansvers">
-                        <div  className="q-content-ansver">
-                            <span>Обычное состояние женщин перед началом менструального цикла, когда они сильно злятся и едят много углеводов. Причина — в гормонах</span></div>
-                        <div  className="q-content-ansver">
-                            <span>ПМС — это последний триместр перед родами</span></div>
-                        <div  className="q-content-ansver">
-                            <span>Разные неприятные симптомы перед началом менструального цикла, которые проявляются не у всех женщин</span></div>
+                        {ansvers}
                     </div>
                 </div>
             </div>
