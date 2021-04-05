@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/richter-app/static/css/main.a890dab8.chunk.css",
-    "main.js": "/richter-app/static/js/main.11a8a6ee.chunk.js",
-    "main.js.map": "/richter-app/static/js/main.11a8a6ee.chunk.js.map",
+    "main.css": "/richter-app/static/css/main.60048523.chunk.css",
+    "main.js": "/richter-app/static/js/main.0e4301f7.chunk.js",
+    "main.js.map": "/richter-app/static/js/main.0e4301f7.chunk.js.map",
     "runtime-main.js": "/richter-app/static/js/runtime-main.e8089a85.js",
     "runtime-main.js.map": "/richter-app/static/js/runtime-main.e8089a85.js.map",
     "static/js/2.2012c0ac.chunk.js": "/richter-app/static/js/2.2012c0ac.chunk.js",
     "static/js/2.2012c0ac.chunk.js.map": "/richter-app/static/js/2.2012c0ac.chunk.js.map",
     "index.html": "/richter-app/index.html",
-    "static/css/main.a890dab8.chunk.css.map": "/richter-app/static/css/main.a890dab8.chunk.css.map",
+    "static/css/main.60048523.chunk.css.map": "/richter-app/static/css/main.60048523.chunk.css.map",
     "static/js/2.2012c0ac.chunk.js.LICENSE.txt": "/richter-app/static/js/2.2012c0ac.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/richter-app/static/media/bg.1b17647e.png",
     "static/media/flower-1.475501cf.svg": "/richter-app/static/media/flower-1.475501cf.svg",
@@ -32,12 +32,15 @@
     "static/media/girl-2.427e7d96.svg": "/richter-app/static/media/girl-2.427e7d96.svg",
     "static/media/girl-3.80e261b5.svg": "/richter-app/static/media/girl-3.80e261b5.svg",
     "static/media/girl-4.e8614d97.svg": "/richter-app/static/media/girl-4.e8614d97.svg",
-    "static/media/logo.23dd7f7c.svg": "/richter-app/static/media/logo.23dd7f7c.svg"
+    "static/media/logo.23dd7f7c.svg": "/richter-app/static/media/logo.23dd7f7c.svg",
+    "static/media/rose-1.83b9a16c.svg": "/richter-app/static/media/rose-1.83b9a16c.svg",
+    "static/media/rose-2.f96e4d6b.svg": "/richter-app/static/media/rose-2.f96e4d6b.svg",
+    "static/media/rose-bg.48292d5b.svg": "/richter-app/static/media/rose-bg.48292d5b.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e8089a85.js",
     "static/js/2.2012c0ac.chunk.js",
-    "static/css/main.a890dab8.chunk.css",
-    "static/js/main.11a8a6ee.chunk.js"
+    "static/css/main.60048523.chunk.css",
+    "static/js/main.0e4301f7.chunk.js"
   ]
 }
