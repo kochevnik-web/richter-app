@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/richter-app/static/css/main.a890dab8.chunk.css",
-    "main.js": "/richter-app/static/js/main.cffc76c1.chunk.js",
-    "main.js.map": "/richter-app/static/js/main.cffc76c1.chunk.js.map",
+    "main.js": "/richter-app/static/js/main.11a8a6ee.chunk.js",
+    "main.js.map": "/richter-app/static/js/main.11a8a6ee.chunk.js.map",
     "runtime-main.js": "/richter-app/static/js/runtime-main.e8089a85.js",
     "runtime-main.js.map": "/richter-app/static/js/runtime-main.e8089a85.js.map",
-    "static/js/2.92d31e8b.chunk.js": "/richter-app/static/js/2.92d31e8b.chunk.js",
-    "static/js/2.92d31e8b.chunk.js.map": "/richter-app/static/js/2.92d31e8b.chunk.js.map",
+    "static/js/2.2012c0ac.chunk.js": "/richter-app/static/js/2.2012c0ac.chunk.js",
+    "static/js/2.2012c0ac.chunk.js.map": "/richter-app/static/js/2.2012c0ac.chunk.js.map",
     "index.html": "/richter-app/index.html",
     "static/css/main.a890dab8.chunk.css.map": "/richter-app/static/css/main.a890dab8.chunk.css.map",
-    "static/js/2.92d31e8b.chunk.js.LICENSE.txt": "/richter-app/static/js/2.92d31e8b.chunk.js.LICENSE.txt",
+    "static/js/2.2012c0ac.chunk.js.LICENSE.txt": "/richter-app/static/js/2.2012c0ac.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/richter-app/static/media/bg.1b17647e.png",
     "static/media/flower-1.475501cf.svg": "/richter-app/static/media/flower-1.475501cf.svg",
     "static/media/flower-10.7da25ce7.svg": "/richter-app/static/media/flower-10.7da25ce7.svg",
@@ -36,8 +36,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e8089a85.js",
-    "static/js/2.92d31e8b.chunk.js",
+    "static/js/2.2012c0ac.chunk.js",
     "static/css/main.a890dab8.chunk.css",
-    "static/js/main.cffc76c1.chunk.js"
+    "static/js/main.11a8a6ee.chunk.js"
   ]
 }
