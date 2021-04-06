@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/richter-app/static/css/main.60048523.chunk.css",
-    "main.js": "/richter-app/static/js/main.0e4301f7.chunk.js",
-    "main.js.map": "/richter-app/static/js/main.0e4301f7.chunk.js.map",
+    "main.css": "/richter-app/static/css/main.589bfd75.chunk.css",
+    "main.js": "/richter-app/static/js/main.0003233a.chunk.js",
+    "main.js.map": "/richter-app/static/js/main.0003233a.chunk.js.map",
     "runtime-main.js": "/richter-app/static/js/runtime-main.e8089a85.js",
     "runtime-main.js.map": "/richter-app/static/js/runtime-main.e8089a85.js.map",
     "static/js/2.2012c0ac.chunk.js": "/richter-app/static/js/2.2012c0ac.chunk.js",
     "static/js/2.2012c0ac.chunk.js.map": "/richter-app/static/js/2.2012c0ac.chunk.js.map",
     "index.html": "/richter-app/index.html",
-    "static/css/main.60048523.chunk.css.map": "/richter-app/static/css/main.60048523.chunk.css.map",
+    "static/css/main.589bfd75.chunk.css.map": "/richter-app/static/css/main.589bfd75.chunk.css.map",
     "static/js/2.2012c0ac.chunk.js.LICENSE.txt": "/richter-app/static/js/2.2012c0ac.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/richter-app/static/media/bg.1b17647e.png",
     "static/media/flower-1.475501cf.svg": "/richter-app/static/media/flower-1.475501cf.svg",
@@ -40,7 +40,7 @@
   "entrypoints": [
     "static/js/runtime-main.e8089a85.js",
     "static/js/2.2012c0ac.chunk.js",
-    "static/css/main.60048523.chunk.css",
-    "static/js/main.0e4301f7.chunk.js"
+    "static/css/main.589bfd75.chunk.css",
+    "static/js/main.0003233a.chunk.js"
   ]
 }
