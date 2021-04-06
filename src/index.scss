@@ -3,8 +3,10 @@
 $black: #000;
 $white: #FFF;
 $green: #05A58B;
+$greenLight: #CCFFCC;
 $blue: #014990;
 $pink: #FFCCFF;
+$pinkRed: #FFCCCC;
 $darkenPink: #F29FBB;
 
 * {
@@ -348,6 +350,7 @@ footer {
     }
 }
 
+//level
 .level {
     opacity: 0;
     transition: opacity 0.275s ease-in;
@@ -383,6 +386,7 @@ footer {
     }
 }
 
+//q-content
 .q-content {
     width: 64.6em;
 
@@ -404,10 +408,22 @@ footer {
         padding: 1.7em 3.4em;
         line-height: 3.36em;
         margin: 0 0 1.6em 0;
-        cursor: pointer;
+        transition: background .3s ease-in-out;
 
-        &:hover {
-            background: #ececec;
+        &:not(.disabled){
+            cursor: pointer;
+            
+            &:hover {
+                background: #ececec;
+            }
+        }
+
+        &.correct {
+            background: $greenLight;
+        }
+
+        &.error {
+            background: $pinkRed;
         }
 
         &:last-child {
@@ -420,6 +436,7 @@ footer {
     }
 }
 
+//rose
 .rose {
     width: 97.4em;
     height: 74.1em;
@@ -450,6 +467,7 @@ footer {
     }
 }
 
+//spiner
 .spiner {
     position: absolute;
     width: 8em;

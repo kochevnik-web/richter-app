@@ -10,9 +10,14 @@ export default function Level({data, children}) {
     gsap.registerPlugin(ScrollToPlugin);
 
     const [startAnimation, setStartAnimation] = useState(false);
+    const [click, setClick] = useState(false);
     const [clx, setClx] = useState(['level']);
 
     let elRef = useRef(null);
+
+    const ansverClick = id => {
+        setClick(id);
+    }
 
     useEffect(() =>{
         const t = data.id === 1 ? 1000 : 0;
@@ -30,7 +35,14 @@ export default function Level({data, children}) {
     },[startAnimation]);
 
     const ansvers = data.ansvers.map((el, indx) => {
-        return <Ansvers key={indx} text={el.text}/>
+        return <Ansvers
+                    key={indx}
+                    text={el.text}
+                    id={indx}
+                    ansverClick={(id) => ansverClick(id)}
+                    click={click}
+                    correct={el.correct}
+                />
     });
 
     return (
