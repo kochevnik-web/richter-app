@@ -1,8 +1,13 @@
-import React, {useRef, useEffect} from 'react';
+import React, {useRef, useEffect, useContext} from 'react';
+
+import { Context } from "../../context";
 
 import gsap from 'gsap';
 
-export default function NextButton({click}) {
+export default function NextButton({click, id}) {
+
+    const {setCountLevel} = useContext(Context);
+
     let but = useRef(null);
 
     useEffect(() => {
@@ -18,7 +23,7 @@ export default function NextButton({click}) {
     }, [click])
 
     return (
-        <div className="next-button" ref={el => (but = el)} onClick={() => console.log(1)}>
+        <div className="next-button" ref={el => (but = el)} onClick={() => setCountLevel(id + 1)}>
             <span>
                 Следующий вопрос
             </span>

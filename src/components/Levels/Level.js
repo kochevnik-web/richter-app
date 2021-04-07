@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useRef} from 'react';
+import React, {useEffect, useState, useRef, useContext} from 'react';
 
 import gsap from 'gsap';
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
@@ -46,7 +46,7 @@ export default function Level({data, children}) {
                     correct={el.correct}
                 />
     });
-
+console.log(data.id);
     return (
         <div className={clx.join(' ')} ref={el => (elRef = el)}>
             <div className="level-wrap">
@@ -59,7 +59,7 @@ export default function Level({data, children}) {
                     </div>
                     <div className="q-content-ansvers">
                         {ansvers}
-                        <NextButton click={click}/>
+                        <NextButton click={click} id={data.id}/>
                     </div>
                 </div>
             </div>
