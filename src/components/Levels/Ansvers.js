@@ -2,7 +2,9 @@ import React, {useRef, useEffect} from 'react';
 
 import gsap from 'gsap';
 
-export default function Ansvers({text, id, ansverClick, click, correct}) {
+import Ans from './Ans';
+
+export default function Ansvers({text, id, ans, ansverClick, click, correct}) {
 
     const handleHover = e => {
         if(click === false) {
@@ -41,16 +43,19 @@ export default function Ansvers({text, id, ansverClick, click, correct}) {
     }
 
     return (
-        <div
-            className={cls.join(' ')}
-            onMouseEnter={e => handleHover(e)}
-            onMouseLeave={e => handleHoverExit(e)}
-            onClick={() => handleClick(id)}
-            style={style}
-        >
-            <span>
-                {text}
-            </span>
-        </div>
+        <>
+            <div
+                className={cls.join(' ')}
+                onMouseEnter={e => handleHover(e)}
+                onMouseLeave={e => handleHoverExit(e)}
+                onClick={() => handleClick(id)}
+                style={style}
+            >
+                <span>
+                    {text}
+                </span>
+            </div>
+            {click !== false && correct ? <Ans ans={ans} /> : null }
+        </>
     )
 }

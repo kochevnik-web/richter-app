@@ -4,6 +4,7 @@ import gsap from 'gsap';
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
 
 import Ansvers from './Ansvers';
+import NextButton from './NextButton';
 
 export default function Level({data, children}) {
 
@@ -39,6 +40,7 @@ export default function Level({data, children}) {
                     key={indx}
                     text={el.text}
                     id={indx}
+                    ans={el.ans}
                     ansverClick={(id) => ansverClick(id)}
                     click={click}
                     correct={el.correct}
@@ -57,6 +59,7 @@ export default function Level({data, children}) {
                     </div>
                     <div className="q-content-ansvers">
                         {ansvers}
+                        <NextButton click={click}/>
                     </div>
                 </div>
             </div>
