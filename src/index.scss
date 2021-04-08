@@ -306,8 +306,8 @@ footer {
         }
 
         .spiner {
-            left: 58em;
-            top: -3em;
+            left: 0;
+            top: 27em;
 
             svg {
                 fill: $darkenPink;
@@ -327,8 +327,8 @@ footer {
         }
 
         .spiner {
-            left: 58em;
-            top: -3em;
+            left: 9em;
+            top: 4em;
 
             svg {
                 fill: $darkenBlue;
@@ -505,6 +505,32 @@ footer {
     height: 77em;
     position: relative;
     margin-right: 1em;
+
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+//bathroom
+.bathroom {
+    width: 96em;
+    height: 82.8em;
+    position: relative;
+    margin-left: 7.4em;
+
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+//short
+.short {
+    width: 91.2em;
+    height: 80em;
+    position: relative;
+    margin-left: 9.2em;
 
     img {
         width: 100%;

@@ -1,8 +1,9 @@
 import React from 'react';
 import Rose from '../LevelComponents/Rose';
 import LadyFlower from '../LevelComponents/LadyFlower';
+import Bathroom from '../LevelComponents/Bathroom';
+import Short from '../LevelComponents/Short';
 import Test from '../Test';
-import LedyFlower from '../LevelComponents/LadyFlower';
 
 const levels = [
     {
@@ -72,7 +73,7 @@ const levels = [
                 ans: 'Это верный ответ. Нередко разрыв гимена — девственной плевы — и вовсе происходит только при родах. Поэтому боль и кровь при первом сексе или же их отсутствие не говорят ничего о сексуальном опыте. Эластичность гимена и наличие в нём отверстий позволяют девушкам, не ведущим половую жизнь, пользоваться тампонами, однако девственную плеву можно повредить простым мышечным растяжением, например при занятиях спортом.'
             },
         ],
-        component: <Test />
+        component: <Bathroom />
     },
     {
         id: 4,
@@ -95,7 +96,7 @@ const levels = [
                 ans: null
             },
         ],
-        component: <Test />
+        component: <Short />
     },
 ];
 
