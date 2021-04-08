@@ -34,7 +34,7 @@ export default function Rose() {
 
     return (
         <div className="rose">
-            <Spiner />
+            <Spiner number={1} />
             <img className="rose-bg" src={rose_bg} alt="Гедеон Рихтер"/>
             <img className="rose-1 rose-item" src={rose_1_src} alt="Гедеон Рихтер" ref={el => (rose_1 = el)}/>
             <img className="rose-2 rose-item" src={rose_2_src} alt="Гедеон Рихтер"ref={el => (rose_2 = el)}/>

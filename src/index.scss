@@ -242,116 +242,6 @@ footer {
     }
 }
 
-//start monile
-.app-mobile {
-    .start {
-        background: url(./img/bg.png) no-repeat top left;
-        background-size: cover;
-        padding: 0;
-
-        &-content {
-            padding: 13em 1.5em 0;
-            position: relative;
-        }
-
-        &-subtitle {
-            justify-content: center;
-            position: relative;
-            padding: 0;
-            margin-bottom: 1.8px;
-
-            span {
-                font-size: 1.8em;
-            }
-
-            img {
-                position: absolute;
-                width: 13.7em;
-                height: 2.2em;
-                top: -11em;
-                right: 0;
-            }
-        }
-
-        &-title {
-            width: 100%;
-            text-align: center;
-            margin-bottom: 38em;
-
-            span {
-                font-size: 3.8em;
-            }
-        }
-
-        &-text {
-            width: 100%;
-            line-height: 2.45em;
-            margin-bottom: 4.2em;
-
-            span {
-                font-size: 1.4em;
-            }
-        }
-
-        &-button {
-            padding-bottom: 6.4em;
-        }
-
-        &-flower {
-    
-            &:nth-child(1) {
-                width: 5.5em;
-                height: 5.4em;
-                left: 14.7em;
-                top: 5.1em;
-            }
-
-            &:nth-child(2) {
-                width: 3.2em;
-                height: 3.5em;
-                left: 24em;
-                top: 107em;
-                z-index: 102;
-            }
-
-            &:nth-child(3) {
-                width: 5.6em;
-                height: 4.8em;
-                left: 25em;
-                top: 26em;
-            }
-
-            &:nth-child(4) {
-                width: 7.1em;
-                height: 6.6em;
-                left: 24.5em;
-                top: 110.5em;
-            }
-
-            &:nth-child(5) {
-                width: 7.5em;
-                height: 6.8em;
-                left: 1.5em;
-                top: 105em;
-            }
-
-            &:nth-child(7) {
-                transform: rotate(-38deg);
-            }
-        }
-
-        .btn {
-            width: 100%;
-            height: 4.7em;
-            border-radius: 1em;
-
-            span {
-                font-size: 2em;
-            }
-        }
-    }
-}
-
 //level
 .level {
     opacity: 0;
@@ -399,8 +289,8 @@ footer {
         }
 
         .spiner {
-            left: 58em;
-            top: -3em;
+            left: 42em;
+            top: 3em;
 
             svg {
                 fill: $darkenBlue;
@@ -442,73 +332,6 @@ footer {
 
             svg {
                 fill: $darkenBlue;
-            }
-        }
-    }
-}
-
-//level mobile
-.app-mobile {
-    .level{
-        padding: 2em 0;
-
-        &:nth-child(1) {
-            .level-wrap {
-                flex-direction: column;
-            }
-
-            .q-content {
-                margin: 0;
-            }
-
-            .spiner {
-                left: 19em;
-                top: -1.4em;
-            }
-        }
-
-        &:nth-child(2) {
-            .level-wrap {
-                flex-direction: column;
-            }
-
-            .q-content {
-                margin: 0;
-            }
-
-            .spiner {
-                left: 19em;
-                top: -1.4em;
-            }
-        }
-
-        &:nth-child(3) {
-            .level-wrap {
-                flex-direction: column;
-            }
-
-            .q-content {
-                margin: 0;
-            }
-
-            .spiner {
-                left: 19em;
-                top: -1.4em;
-            }
-        }
-
-        &:nth-child(4) {
-            .level-wrap {
-                flex-direction: column;
-            }
-
-            .q-content {
-                margin: 0;
-            }
-
-            .spiner {
-                left: 19em;
-                top: -1.4em;
             }
         }
     }
@@ -585,41 +408,6 @@ footer {
     }
 }
 
-//q-content mobile
-.app-mobile {
-    .q-content {
-        width: 100%;
-        padding: 1em 1.5em 0 1.5em;
-
-        &-text {
-            line-height: 2.32em;
-
-            span {
-                font-size: 1.6em;
-            }
-        }
-
-        &-ansver {
-            border-radius: 1.2em;
-            padding: 1.6em;
-            line-height: 1.68em;
-
-            span {
-                font-size: 1.2em;
-            }
-        }
-
-        &-ans {
-            line-height: 1.68em;
-            padding: 0 1.6em;
-
-            span {
-                font-size: 1.2em;
-            }
-        }
-    }
-}
-
 //next-button
 .next-button {
     border-radius: 1.8em;
@@ -651,19 +439,6 @@ footer {
     }
 }
 
-//next-button mobile
-.app-mobile {
-    .next-button {
-        border-radius: 1em;
-        margin: 2em 0 0 0;
-        height: 4.5em;
-    
-        span {
-            font-size: 2.1em;
-        }
-    }
-}
-
 //spiner
 .spiner {
     position: absolute;
@@ -674,6 +449,7 @@ footer {
     align-items: center;
     justify-content: center;
     color: $blue;
+    line-height: 1;
 
     svg {
         fill: #05A58B;
@@ -689,18 +465,6 @@ footer {
         z-index: 1;
         font-size: 3.2em;
         font-weight: 600;
-    }
-}
-
-//spiner mobile
-.app-mobile {
-    .spiner {
-        width: 3.5em;
-        height: 3.5em;
-
-        span {
-            font-size: 1.5em;
-        }
     }
 }
 
@@ -735,27 +499,15 @@ footer {
     }
 }
 
-//rose mobile
-.app-mobile {
-    .rose {
-        width: 100%;
-        height: auto;
-        position: relative;
-        margin-left: 0;
+//lady-flower
+.lady-flower {
+    width: 93.2em;
+    height: 77em;
+    position: relative;
+    margin-right: 1em;
 
-        &-item{
-            &.rose-1 {
-                width: 21.9em;
-                height: 11.6em;
-                top: 11em;
-                left: 6.7em;
-            }
-            &.rose-2 {
-                width: 17em;
-                height: 25.2em;
-                top: -2em;
-                left: -2.3em;
-            }
-        }
+    img {
+        width: 100%;
+        display: block;
     }
 }

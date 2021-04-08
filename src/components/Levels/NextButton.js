@@ -6,7 +6,7 @@ import gsap from 'gsap';
 
 export default function NextButton({click, id}) {
 
-    const {setCountLevel} = useContext(Context);
+    const {changeLevel} = useContext(Context);
 
     let but = useRef(null);
 
@@ -23,7 +23,7 @@ export default function NextButton({click, id}) {
     }, [click])
 
     return (
-        <div className="next-button" ref={el => (but = el)} onClick={() => setCountLevel(id + 1)}>
+        <div className="next-button" ref={el => (but = el)} onClick={() => changeLevel(id + 1)}>
             <span>
                 Следующий вопрос
             </span>

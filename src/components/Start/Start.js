@@ -21,7 +21,7 @@ export default function Start() {
 
     gsap.registerPlugin(MotionPathPlugin);
 
-    const {isMobile, setCountLevel} = useContext(Context);
+    const {isMobile, changeLevel} = useContext(Context);
 
     const [startGame, setStartGame] = useState(false);
     const [fide_1, setFide_1] = useState(false);
@@ -40,7 +40,7 @@ export default function Start() {
 
     const handleStartGame = () => {
         setStartGame(true);
-        setCountLevel(1);
+        changeLevel(1);
     }
 
     //animation flowars

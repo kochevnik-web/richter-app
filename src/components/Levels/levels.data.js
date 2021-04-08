@@ -1,6 +1,8 @@
 import React from 'react';
 import Rose from '../LevelComponents/Rose';
+import LadyFlower from '../LevelComponents/LadyFlower';
 import Test from '../Test';
+import LedyFlower from '../LevelComponents/LadyFlower';
 
 const levels = [
     {
@@ -47,7 +49,7 @@ const levels = [
                 ans: null
             },
         ],
-        component: <Test />
+        component: <LadyFlower />
     },
     {
         id: 3,
