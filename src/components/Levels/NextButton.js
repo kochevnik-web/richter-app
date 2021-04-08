@@ -25,7 +25,7 @@ export default function NextButton({click, id}) {
     return (
         <div className="next-button" ref={el => (but = el)} onClick={() => changeLevel(id + 1)}>
             <span>
-                Следующий вопрос
+                {id === 9 ? 'Узнать результат' : 'Следующий вопрос' }
             </span>
         </div>
     )

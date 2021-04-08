@@ -171,6 +171,81 @@
                 top: 0.3em;
             }
         }
+
+        &:nth-child(5) {
+            .level-wrap {
+                flex-direction: column;
+            }
+
+            .q-content {
+                margin: 0;
+            }
+
+            .spiner {
+                left: 0.5em;
+                top: 8em;
+            }
+        }
+
+        &:nth-child(6) {
+            .level-wrap {
+                flex-direction: column;
+            }
+
+            .q-content {
+                margin: 0;
+            }
+
+            .spiner {
+                left: 4em;
+                top: 0.3em;
+            }
+        }
+
+        &:nth-child(7) {
+            .level-wrap {
+                flex-direction: column;
+            }
+
+            .q-content {
+                margin: 0;
+            }
+
+            .spiner {
+                left: 0.5em;
+                top: 8em;
+            }
+        }
+
+        &:nth-child(8) {
+            .level-wrap {
+                flex-direction: column;
+            }
+
+            .q-content {
+                margin: 0;
+            }
+
+            .spiner {
+                left: 4em;
+                top: 0.3em;
+            }
+        }
+
+        &:nth-child(9) {
+            .level-wrap {
+                flex-direction: column;
+            }
+
+            .q-content {
+                margin: 0;
+            }
+
+            .spiner {
+                left: 0.5em;
+                top: 8em;
+            }
+        }
     }
 
     //q-content

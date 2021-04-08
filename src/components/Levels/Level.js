@@ -6,7 +6,11 @@ import ScrollToPlugin from 'gsap/ScrollToPlugin';
 import Ansvers from './Ansvers';
 import NextButton from './NextButton';
 
+import { Context } from "../../context";
+
 export default function Level({data, children}) {
+
+    const {count, setCount} = useContext(Context);
 
     gsap.registerPlugin(ScrollToPlugin);
 
@@ -18,6 +22,7 @@ export default function Level({data, children}) {
 
     const ansverClick = id => {
         setClick(id);
+        if(data.ansvers[id].correct) setCount(count + 1);
     }
 
     useEffect(() =>{
@@ -46,7 +51,7 @@ export default function Level({data, children}) {
                     correct={el.correct}
                 />
     });
-console.log(data.id);
+
     return (
         <div className={clx.join(' ')} ref={el => (elRef = el)}>
             <div className="level-wrap">

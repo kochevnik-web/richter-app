@@ -18,9 +18,7 @@ export default function Ans({ans}) {
 
     return (
         <div className="q-content-ans" ref={el => (text = el)}>
-            <span ref={el => (textChild = el)}>
-                {ans}
-            </span>
+            <span ref={el => (textChild = el)} dangerouslySetInnerHTML={{__html: ans}}></span>
         </div>
     )
 }
