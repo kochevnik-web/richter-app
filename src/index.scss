@@ -344,8 +344,8 @@ footer {
         }
 
         .spiner {
-            left: 0;
-            top: 27em;
+            left: 16em;
+            top: 11em;
 
             svg {
                 fill: $darkenPink;
@@ -365,8 +365,8 @@ footer {
         }
 
         .spiner {
-            left: 9em;
-            top: 4em;
+            left: 35em;
+            top: 0;
 
             svg {
                 fill: $darkenBlue;
@@ -623,10 +623,43 @@ footer {
     width: 91.2em;
     height: 80em;
     position: relative;
-    margin-left: 9.2em;
+    margin-right: 9.2em;
 
     img {
         width: 100%;
         display: block;
+    }
+}
+
+//shower
+.shower {
+    width: 108.4em;
+    height: 80.8em;
+    position: relative;
+
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+//pills
+.pills {
+    width: 100em;
+    height: 79.1em;
+    position: relative;
+    margin-right: 2.5em;
+
+    &-bg {
+        width: 100%;
+        display: block;
+    }
+
+    &-item {
+        position: absolute;
+        top: 40em;
+        left: 36.7em;
+        width: 24.4em;
+        height: 33.8em;
     }
 }

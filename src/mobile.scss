@@ -182,8 +182,8 @@
             }
 
             .spiner {
-                left: 0.5em;
-                top: 8em;
+                left: 5em;
+                top: 2em;
             }
         }
 
@@ -197,8 +197,8 @@
             }
 
             .spiner {
-                left: 4em;
-                top: 0.3em;
+                left: 11em;
+                top: -0.4em;
             }
         }
 
@@ -345,7 +345,33 @@
     .short {
         width: 100%;
         height: auto;
-        margin-left: 0;
+        margin-right: 0;
         padding: 0 1em;
+    }
+
+    //shower
+    .shower {
+        width: 100%;
+        height: auto;
+        padding: 0 1em;
+    }
+
+    //pills
+    .pills {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+
+        &-bg {
+            width: 100%;
+            display: block;
+        }
+
+        &-item {
+            top: 13em;
+            left: 12em;
+            width: 7.4em;
+            height: auto;
+        }
     }
 }
