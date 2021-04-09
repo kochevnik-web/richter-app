@@ -6,26 +6,6 @@ import Ans from './Ans';
 
 export default function Ansvers({text, id, ans, ansverClick, click, correct}) {
 
-    const handleHover = e => {
-        if(click === false) {
-            gsap.to(e.target, {
-                duration: 0.3,
-                scale: 1.1,
-                ease: 'power3.inOut'
-            });
-        }
-    }
-
-    const handleHoverExit = e => {
-        if(click === false) {
-            gsap.to(e.target, {
-                duration: 0.3,
-                scale: 1,
-                ease: 'power3.inOut'
-            });
-        }
-    }
-
     const handleClick = id => {
         if(click === false) ansverClick(id);
     }
@@ -46,8 +26,6 @@ export default function Ansvers({text, id, ans, ansverClick, click, correct}) {
         <>
             <div
                 className={cls.join(' ')}
-                onMouseEnter={e => handleHover(e)}
-                onMouseLeave={e => handleHoverExit(e)}
                 onClick={() => handleClick(id)}
                 style={style}
             >

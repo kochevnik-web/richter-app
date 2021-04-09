@@ -458,13 +458,14 @@ footer {
         padding: 1.7em 3.4em;
         line-height: 3.36em;
         margin: 0 0 1.6em 0;
-        transition: background .3s ease-in-out;
+        transition: background .3s ease-in-out, transform .3s ease-in-out;
 
         &:not(.disabled){
             cursor: pointer;
             
             &:hover {
                 background: #ececec;
+                transform: scale(1.08);
             }
         }
 
