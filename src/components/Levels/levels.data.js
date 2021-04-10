@@ -5,6 +5,7 @@ import Bathroom from '../LevelComponents/Bathroom';
 import Short from '../LevelComponents/Short';
 import Shower from '../LevelComponents/Shower';
 import Pills from '../LevelComponents/Pills';
+import Cross from '../LevelComponents/Cross';
 import Test from '../Test';
 
 const levels = [
@@ -167,7 +168,7 @@ const levels = [
                 ans: 'Посещать специалистов нужно не реже раза в год — об этом говорится даже в <b>Приказе Минздрава России</b>. Минимальный перечень процедур при таких визитах: профессиональный осмотр, анализ мазка на микрофлору, онкоцитологическое исследование материала, взятого с поверхности шейки матки. Исчерпывающей картины состояния женского здоровья такие исследования не дадут, но вовремя заметить тревожные изменения помогут.'
             },
         ],
-        component: <Test />
+        component: <Cross />
     },
     {
         id: 8,

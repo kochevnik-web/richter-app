@@ -382,8 +382,8 @@ footer {
         }
 
         .spiner {
-            left: 0;
-            top: 27em;
+            left: 74em;
+            top: 5.5em;
 
             svg {
                 fill: $darkenPink;
@@ -662,5 +662,18 @@ footer {
         left: 36.7em;
         width: 24.4em;
         height: 33.8em;
+    }
+}
+
+//cross
+.cross {
+    width: 95em;
+    height: 79.8em;
+    position: relative;
+    margin-left: 8.4em;
+
+    img {
+        width: 100%;
+        display: block;
     }
 }

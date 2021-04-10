@@ -198,7 +198,7 @@
 
             .spiner {
                 left: 11em;
-                top: -0.4em;
+                top: -0.6em;
             }
         }
 
@@ -212,8 +212,8 @@
             }
 
             .spiner {
-                left: 0.5em;
-                top: 8em;
+                left: 24.5em;
+                top: 1.6em;
             }
         }
 
@@ -361,6 +361,7 @@
         width: 100%;
         height: auto;
         margin-right: 0;
+        padding: 0 1em;
 
         &-bg {
             width: 100%;
@@ -369,9 +370,17 @@
 
         &-item {
             top: 13em;
-            left: 12em;
-            width: 7.4em;
+            left: 12.5em;
+            width: 6.7em;
             height: auto;
         }
+    }
+
+    //cross
+    .cross {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        padding: 0 1em;
     }
 }
