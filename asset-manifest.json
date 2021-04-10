@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/richter-app/static/css/main.c9853d40.chunk.css",
-    "main.js": "/richter-app/static/js/main.dc5b9254.chunk.js",
-    "main.js.map": "/richter-app/static/js/main.dc5b9254.chunk.js.map",
+    "main.css": "/richter-app/static/css/main.d5a06e09.chunk.css",
+    "main.js": "/richter-app/static/js/main.916fb280.chunk.js",
+    "main.js.map": "/richter-app/static/js/main.916fb280.chunk.js.map",
     "runtime-main.js": "/richter-app/static/js/runtime-main.e8089a85.js",
     "runtime-main.js.map": "/richter-app/static/js/runtime-main.e8089a85.js.map",
     "static/js/2.59c7a5ab.chunk.js": "/richter-app/static/js/2.59c7a5ab.chunk.js",
     "static/js/2.59c7a5ab.chunk.js.map": "/richter-app/static/js/2.59c7a5ab.chunk.js.map",
     "index.html": "/richter-app/index.html",
-    "static/css/main.c9853d40.chunk.css.map": "/richter-app/static/css/main.c9853d40.chunk.css.map",
+    "static/css/main.d5a06e09.chunk.css.map": "/richter-app/static/css/main.d5a06e09.chunk.css.map",
     "static/js/2.59c7a5ab.chunk.js.LICENSE.txt": "/richter-app/static/js/2.59c7a5ab.chunk.js.LICENSE.txt",
     "static/media/bathroom.cf68b2b3.svg": "/richter-app/static/media/bathroom.cf68b2b3.svg",
     "static/media/mobile.scss": "/richter-app/static/media/bg.1b17647e.png",
+    "static/media/cross.f8893396.svg": "/richter-app/static/media/cross.f8893396.svg",
     "static/media/flower-1.475501cf.svg": "/richter-app/static/media/flower-1.475501cf.svg",
     "static/media/flower-10.7da25ce7.svg": "/richter-app/static/media/flower-10.7da25ce7.svg",
     "static/media/flower-11.038176b5.svg": "/richter-app/static/media/flower-11.038176b5.svg",
@@ -40,13 +41,17 @@
     "static/media/rose-1.83b9a16c.svg": "/richter-app/static/media/rose-1.83b9a16c.svg",
     "static/media/rose-2.f96e4d6b.svg": "/richter-app/static/media/rose-2.f96e4d6b.svg",
     "static/media/rose-bg.48292d5b.svg": "/richter-app/static/media/rose-bg.48292d5b.svg",
+    "static/media/scream-1.6cb345bb.svg": "/richter-app/static/media/scream-1.6cb345bb.svg",
+    "static/media/scream-2.d44ffa71.svg": "/richter-app/static/media/scream-2.d44ffa71.svg",
+    "static/media/scream-bg.55598064.svg": "/richter-app/static/media/scream-bg.55598064.svg",
     "static/media/short.fcca697d.svg": "/richter-app/static/media/short.fcca697d.svg",
-    "static/media/shower.a8db2032.svg": "/richter-app/static/media/shower.a8db2032.svg"
+    "static/media/shower.a8db2032.svg": "/richter-app/static/media/shower.a8db2032.svg",
+    "static/media/watch.ddbda1f3.svg": "/richter-app/static/media/watch.ddbda1f3.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e8089a85.js",
     "static/js/2.59c7a5ab.chunk.js",
-    "static/css/main.c9853d40.chunk.css",
-    "static/js/main.dc5b9254.chunk.js"
+    "static/css/main.d5a06e09.chunk.css",
+    "static/js/main.916fb280.chunk.js"
   ]
 }
