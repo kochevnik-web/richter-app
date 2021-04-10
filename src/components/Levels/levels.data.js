@@ -6,6 +6,7 @@ import Short from '../LevelComponents/Short';
 import Shower from '../LevelComponents/Shower';
 import Pills from '../LevelComponents/Pills';
 import Cross from '../LevelComponents/Cross';
+import Watch from '../LevelComponents/Watch';
 import Test from '../Test';
 
 const levels = [
@@ -191,7 +192,7 @@ const levels = [
                 ans: null
             },
         ],
-        component: <Test />
+        component: <Watch />
     },
     {
         id: 9,

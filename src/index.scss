@@ -403,8 +403,8 @@ footer {
         }
 
         .spiner {
-            left: 9em;
-            top: 4em;
+            left: 2em;
+            top: 55em;
 
             svg {
                 fill: $darkenBlue;
@@ -671,6 +671,19 @@ footer {
     height: 79.8em;
     position: relative;
     margin-left: 8.4em;
+
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+//watch
+.watch {
+    width: 94.5em;
+    height: 81.6em;
+    position: relative;
+    margin-right: 4.4em;
 
     img {
         width: 100%;

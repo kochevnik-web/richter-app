@@ -227,8 +227,8 @@
             }
 
             .spiner {
-                left: 4em;
-                top: 0.3em;
+                left: 1em;
+                top: 16.6em;
             }
         }
 
@@ -381,6 +381,13 @@
         width: 100%;
         height: auto;
         margin-left: 0;
+        padding: 0 1em;
+    }
+
+    .watch {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
         padding: 0 1em;
     }
 }
