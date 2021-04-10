@@ -420,8 +420,8 @@ footer {
         }
 
         .spiner {
-            left: 0;
-            top: 27em;
+            left: 17em;
+            top: 4.5em;
 
             svg {
                 fill: $darkenPink;
@@ -688,5 +688,36 @@ footer {
     img {
         width: 100%;
         display: block;
+    }
+}
+
+//scream
+.scream {
+    width: 88.7em;
+    height: 78.3em;
+    position: relative;
+    margin-left: 10.1em;
+
+    &-bg {
+        width: 100%;
+        display: block;
+    }
+
+    &-item {
+        position: absolute;
+
+        &.scream-1 {
+            width: 26.9em;
+            height: 26.2em;
+            top: 16em;
+            left: -3.3em;
+        }
+
+        &.scream-2 {
+            width: 25.8em;
+            height: 24.1em;
+            top: 1em;
+            left: 66.7em;
+        }
     }
 }

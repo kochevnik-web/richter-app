@@ -242,8 +242,8 @@
             }
 
             .spiner {
-                left: 0.5em;
-                top: 8em;
+                left: 7.5em;
+                top: 0.6em;
             }
         }
     }
@@ -389,5 +389,36 @@
         height: auto;
         margin-right: 0;
         padding: 0 1em;
+    }
+
+    //scream
+    .scream {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        padding: 0 1em;
+
+        &-bg {
+            width: 100%;
+            display: block;
+        }
+
+        &-item {
+            position: absolute;
+
+            &.scream-1 {
+                width: 8.9em;
+                height: auto;
+                top: 5em;
+                left: 0.7em;
+            }
+
+            &.scream-2 {
+                width: 7.8em;
+                height: auto;
+                top: 1em;
+                left: 24em;
+            }
+        }
     }
 }

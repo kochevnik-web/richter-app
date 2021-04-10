@@ -7,7 +7,7 @@ import Shower from '../LevelComponents/Shower';
 import Pills from '../LevelComponents/Pills';
 import Cross from '../LevelComponents/Cross';
 import Watch from '../LevelComponents/Watch';
-import Test from '../Test';
+import Scream from '../LevelComponents/Scream';
 
 const levels = [
     {
@@ -215,7 +215,7 @@ const levels = [
                 ans: 'Раньше действительно считалось, что существует два вида оргазма, зависящих от разных видов стимуляции. Сейчас мы знаем, что клитор — не маленькая «кнопочка», а Y-образный орган со сложной анатомической структурой. Основная его часть находится внутри тела, поэтому при любом типе стимуляции главным героем остается именно он, и никакого изолированно вагинального оргазма не бывает. Индивидуальные ощущения могут быть очень разными и, конечно, сами по себе не свидетельствуют о какой-либо зрелости и не могут быть поводом для любой дискриминации.'
             },
         ],
-        component: <Test />
+        component: <Scream />
     },
 ];
 
