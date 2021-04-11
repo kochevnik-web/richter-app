@@ -13,6 +13,14 @@ export default function Final() {
 
     let dataFinal = data[0];
 
+    if (count >= 4 ) {
+        dataFinal = data[1];
+    }
+
+    if (count >= 7 ) {
+        dataFinal = data[2];
+    }
+
     return (
         <div className="final">
             <div className="final-logo">
