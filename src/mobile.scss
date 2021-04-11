@@ -421,4 +421,97 @@
             }
         }
     }
+
+    //final
+    .final {
+        background: #99CCFF url(./img/final-mobile-bg.png)no-repeat top center;
+        background-size: 100%;
+        padding: 5em 0 3.3em;
+
+        &-logo {
+            left: 46%;
+            top: 1em;
+            width: 50%;
+        }
+
+        &-wrap {
+            width: 100%;
+            padding: 0 1.5em;
+        }
+
+        &-img {
+            margin-bottom: 2em;
+        }
+
+        &-title {
+            line-height: 3em;
+            margin-bottom: 2em;
+
+            span {
+                font-size: 2.8em;
+            }
+        }
+
+        &-description {
+            line-height: 2.4em;
+
+            p {
+                font-size: 1.4em;
+            }
+        }
+
+        &-buttons {
+            flex-direction: column;
+            margin-bottom: 4.2em;
+
+            .btn {
+                width: 100%;
+                height: 4.5em;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &:first-child {
+                    margin-bottom: 1.5em;
+                }
+
+                span {
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+
+    .Shers {
+        justify-content: flex-start;
+
+        .share-btn {
+            width: 4.5em;
+            height: 4.5em;
+        }
+
+        .share-btn-vk {
+            svg {
+                width: 2.65em;
+                height: auto;
+                margin-top: 0.5em;
+            }
+        }
+
+        .share-btn-tw {
+            svg {
+                width: 3.2em;
+                height: auto;
+                margin-top: 0.2em;
+            }
+        }
+
+        .share-btn-fb {
+            svg {
+                width: 1.6em;
+                height: auto;
+            }
+        }
+    }
 }

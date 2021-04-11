@@ -830,11 +830,6 @@ footer {
         svg {
             width: 5.1em;
             height: 3em;
-
-            @media(max-width: 768px){
-                width: 7.65em;
-                height: 4.5em;
-            }
         }
     }
 
@@ -844,11 +839,6 @@ footer {
         svg {
             width: 4.8em;
             height: 3.8em;
-
-            @media(max-width: 768px){
-                width: 7.2em;
-                height: 5.7em;
-            }
         }
     }
 
@@ -858,11 +848,6 @@ footer {
         svg {
             width: 2.4em;
             height: 5em;
-
-            @media(max-width: 768px){
-                width: 3.6em;
-                height: 7.5em;
-            }
         }
     }
 }

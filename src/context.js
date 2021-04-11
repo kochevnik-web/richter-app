@@ -20,7 +20,7 @@ export default function ContextProvider({ children }) {
     const [em, setEm] = useState(10);
     const [isMobile, setIsMobile] = useState(false);
     const [count, setCount] = useState(0);
-    const [countLevel, setCountLevel] = useState(9);
+    const [countLevel, setCountLevel] = useState(0);
 
     useEffect(()=>{
         setEm(getEm());
