@@ -63,6 +63,17 @@ footer {
             color: $blue;
         }
     }
+
+    &.btn-white {
+        background-color: $white;
+        border: 0.4em solid $white;
+        color: $blue;
+        transition: border .275s ease-out;
+
+        &:hover{
+            border: 0.4em solid $blue;
+        }
+    }
 }
 
 .fadeInUp {
@@ -718,6 +729,65 @@ footer {
             height: 24.1em;
             top: 1em;
             left: 66.7em;
+        }
+    }
+}
+
+//final
+.final {
+    position: relative;
+    background: $blueLight;
+
+    &-logo {
+        position: absolute;
+    }
+
+    &-wrap {
+        width: 98em;
+        margin: 0 auto;
+    }
+
+    &-img {
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &-title {
+        line-height: 8.7em;
+        color: $blue;
+
+        span {
+            font-size: 6em;
+        }
+    }
+
+    &-description {
+        line-height: 3.9em;
+        color: $blue;
+
+        p {
+            font-size: 2.6em;
+        }
+    }
+
+    &-buttons {
+        display: flex;
+
+        .btn {
+            width: 50%;
+            height: 7.3em;
+            line-height: 1;
+
+            &:first-child {
+                margin-right: 2em;
+            }
+
+            span {
+                font-size: 3.2em;
+            }
         }
     }
 }

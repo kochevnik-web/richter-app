@@ -4,6 +4,7 @@ import { Context } from "../../context";
 
 import Start from '../Start/Start';
 import Level from '../Levels/Level';
+import Final from '../Final/Final';
 
 import levels from '../Levels/levels.data';
 
@@ -29,6 +30,7 @@ function App() {
       <div className="levels">
         {listLevels}
       </div>
+      {countLevel >= 10 ? <Final /> : null}
     </div>
   );
 }
