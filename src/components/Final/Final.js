@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useRef, useEffect, useState} from 'react';
 
 import { Context } from "../../context";
 
@@ -7,9 +7,34 @@ import Shers from '../Shers/Shers';
 
 import logo from '../Start/img/logo.svg';
 
+import gsap from 'gsap';
+import ScrollToPlugin from 'gsap/ScrollToPlugin';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+
 export default function Final() {
 
     const {count} = useContext(Context);
+
+    gsap.registerPlugin(ScrollToPlugin);
+
+    const [startAnimation, setStartAnimation] = useState(false);
+    const [clx, setClx] = useState(['final']);
+
+    let elRef = useRef(null);
+
+    useEffect(() =>{
+        setTimeout(() => {
+            setStartAnimation(true);
+        }, 500);
+        
+        setClx([...clx, 'show']);
+    },[]);
+
+    useEffect(() =>{
+        if(startAnimation){
+            gsap.to(window, {duration: 1, scrollTo: {y: elRef, offsetY: 0}});
+        }
+    },[startAnimation]);
 
     let dataFinal = data[0];
 
@@ -22,7 +47,7 @@ export default function Final() {
     }
 
     return (
-        <div className="final">
+        <div className={clx.join(' ')} ref={el => (elRef = el)}>
             <div className="final-logo">
                 <img src={logo} alt="Гедеон Рихтер" />
             </div>
