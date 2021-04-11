@@ -32,7 +32,7 @@ export default function Final() {
                     <a href="#" className="btn btn-blue">
                         <span>Хочу знать больше</span>
                     </a>
-                    <div className="btn btn-white">
+                    <div className="btn btn-white" onClick={() => window.location.reload()}>
                         <span>Пройти еще раз</span>
                     </div>
                 </div>

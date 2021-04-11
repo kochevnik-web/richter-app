@@ -738,9 +738,18 @@ footer {
     position: relative;
     background: $blueLight url(./img/final-bg.png)no-repeat top center;
     background-size: 100%;
+    padding: 3em 0 7.3em;
 
     &-logo {
         position: absolute;
+        width: 25.1em;
+        left: 129em;
+        top: 5em;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 
     &-wrap {
@@ -771,11 +780,13 @@ footer {
 
         p {
             font-size: 2.6em;
+            margin-bottom: 1.8em;
         }
     }
 
     &-buttons {
         display: flex;
+        margin-bottom: 6.2em;
 
         .btn {
             width: 50%;
