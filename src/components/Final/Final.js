@@ -3,6 +3,7 @@ import React, {useContext} from 'react';
 import { Context } from "../../context";
 
 import data from './final.data';
+import Shers from '../Shers/Shers';
 
 import logo from '../Start/img/logo.svg';
 
@@ -35,9 +36,7 @@ export default function Final() {
                         <span>Пройти еще раз</span>
                     </div>
                 </div>
-                <div className="final-social">
-
-                </div>
+                <Shers />
             </div>
         </div>
     )
