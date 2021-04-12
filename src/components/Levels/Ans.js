@@ -8,7 +8,7 @@ export default function Ans({ans}) {
 
     useEffect(() => {
         gsap.to(text, {
-            duration: 1,
+            duration: 0.8,
             opacity: 1,
             height: textChild.getBoundingClientRect().height,
             ease: "power3.In",
