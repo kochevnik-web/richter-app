@@ -61,7 +61,7 @@ export default function Final() {
                     <div className="final-description" dangerouslySetInnerHTML={{__html: dataFinal.text}}></div>
                 </div>
                 <div className="final-buttons">
-                    <a href="#" className="btn btn-blue">
+                    <a href="https://www.w-health.ru/?utm_source=medialeaks&utm_campaign=njz_2021" className="btn btn-blue" target="_blank" rel="noreferrer">
                         <span>Хочу знать больше</span>
                     </a>
                     <div className="btn btn-white" onClick={() => window.location.reload()}>

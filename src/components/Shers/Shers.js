@@ -3,8 +3,6 @@ import {FacebookShareButton,TwitterShareButton,VKShareButton} from "react-share"
 
 import data from './shers.data';
 
-import imgShare from '../Final/img/final-1.svg';
-
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
@@ -12,11 +10,13 @@ export default function Shers() {
 
     gsap.registerPlugin(ScrollTrigger);
 
-    const title = 'Гедеон Рихтер';
-    const desc  = 'Гедеон Рихтер';
-    const url   = 'https://medialeaks.ru/richter/';
+    const title = 'Спецпроект. Как устроены женщины?';
+    const desc  = 'Женщины устроены довольно сложно — это мы сейчас не о внутреннем мире, а о физиологии. Вместе с компанией «Гедеон Рихтер» предлагаем вам проверить свои знания на эту тему!';
+    const url   = 'https://medialeaks.ru/what-are-girls-made-of/';
+    // "homepage": "https://medialeaks.ru/what-are-girls-made-of/",
 
     let elRef = useRef([]);
+    let imgShare = process.env.PUBLIC_URL+ '/rech-app.pmg';
 
     useEffect(() => {
         gsap.fromTo(elRef.current, {
@@ -34,7 +34,7 @@ export default function Shers() {
                 amount: -0.5,
             }
           });
-    }, [])
+    }, []);
 
     return (
         <div className="Shers">
