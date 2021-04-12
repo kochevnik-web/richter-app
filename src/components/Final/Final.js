@@ -9,7 +9,6 @@ import logo from '../Start/img/logo.svg';
 
 import gsap from 'gsap';
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
-import ScrollTrigger from 'gsap/ScrollTrigger';
 
 export default function Final() {
 
@@ -42,7 +41,7 @@ export default function Final() {
         dataFinal = data[1];
     }
 
-    if (count >= 7 ) {
+    if (count >= 8 ) {
         dataFinal = data[2];
     }
 
