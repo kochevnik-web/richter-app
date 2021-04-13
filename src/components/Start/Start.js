@@ -72,7 +72,7 @@ export default function Start() {
                 repeat: -1
             });
         }
-
+    // eslint-disable-next-line
     }, []);
 
     //animation for texts
@@ -149,7 +149,7 @@ export default function Start() {
                 });
             }
         }
-    },[startGame])
+    },[startGame, isMobile])
 
     //Formation girls data in element
     const girlsList = girls.map(el => {

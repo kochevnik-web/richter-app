@@ -42,6 +42,7 @@ export default function Ansvers({text, id, ans, ansverClick, click, correct}) {
                 }
             });
         }
+        // eslint-disable-next-line
     }, [click, correct]);
 
     return (

@@ -32,6 +32,7 @@ export default function Level({data, children}) {
         }, t);
         
         setClx([...clx, 'show']);
+        // eslint-disable-next-line
     },[]);
 
     useEffect(() =>{

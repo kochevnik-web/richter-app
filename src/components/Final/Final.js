@@ -46,6 +46,7 @@ export default function Final() {
         }, 500);
         
         setClx([...clx, 'show']);
+        // eslint-disable-next-line
     },[]);
 
     return (
@@ -53,9 +54,9 @@ export default function Final() {
             <div className="final-logo">
                 <img src={logo} alt="Гедеон Рихтер" />
             </div>
-            <img className={'final-flower final-flower-1' + ' points-' + dataFinal.class} src={flower_1} alt="Гедеон Рихтер" />
-            <img className={'final-flower final-flower-2' + ' points-' + dataFinal.class} src={flower_2} alt="Гедеон Рихтер" />
-            <img className={'final-flower final-flower-3' + ' points-' + dataFinal.class} src={flower_3} alt="Гедеон Рихтер" />
+            <img className={'final-flower final-flower-1 points-' + dataFinal.class} src={flower_1} alt="Гедеон Рихтер" />
+            <img className={'final-flower final-flower-2 points-' + dataFinal.class} src={flower_2} alt="Гедеон Рихтер" />
+            <img className={'final-flower final-flower-3 points-' + dataFinal.class} src={flower_3} alt="Гедеон Рихтер" />
             <div className="final-wrap">
                 <div className="final-img">
                     <img src={dataFinal.img} alt="Гедеон Рихтер" />

@@ -11,7 +11,7 @@ export default function Shers() {
     gsap.registerPlugin(ScrollTrigger);
 
     const title = 'Спецпроект. Как устроены женщины?';
-    const desc  = 'Женщины устроены довольно сложно — это мы сейчас не о внутреннем мире, а о физиологии. Вместе с компанией «Гедеон Рихтер» предлагаем вам проверить свои знания на эту тему!';
+    // const desc  = 'Женщины устроены довольно сложно — это мы сейчас не о внутреннем мире, а о физиологии. Вместе с компанией «Гедеон Рихтер» предлагаем вам проверить свои знания на эту тему!';
     const url   = 'https://medialeaks.ru/what-are-girls-made-of/';
     // "homepage": "https://medialeaks.ru/what-are-girls-made-of/",
 
