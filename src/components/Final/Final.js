@@ -6,6 +6,9 @@ import data from './final.data';
 import Shers from '../Shers/Shers';
 
 import logo from '../Start/img/logo.svg';
+import flower_1 from './img/flower-1.svg';
+import flower_2 from './img/flower-2.svg';
+import flower_3 from './img/flower-3.svg';
 
 import gsap from 'gsap';
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
@@ -17,17 +20,9 @@ export default function Final() {
     gsap.registerPlugin(ScrollToPlugin);
 
     const [startAnimation, setStartAnimation] = useState(false);
-    const [clx, setClx] = useState(['final']);
+    const [clx, setClx] = useState(['final', 'points-' + count]);
 
     let elRef = useRef(null);
-
-    useEffect(() =>{
-        setTimeout(() => {
-            setStartAnimation(true);
-        }, 500);
-        
-        setClx([...clx, 'show']);
-    },[]);
 
     useEffect(() =>{
         if(startAnimation){
@@ -45,11 +40,22 @@ export default function Final() {
         dataFinal = data[2];
     }
 
+    useEffect(() =>{
+        setTimeout(() => {
+            setStartAnimation(true);
+        }, 500);
+        
+        setClx([...clx, 'show']);
+    },[]);
+
     return (
         <div className={clx.join(' ')} ref={el => (elRef = el)}>
             <div className="final-logo">
                 <img src={logo} alt="Гедеон Рихтер" />
             </div>
+            <img className={'final-flower final-flower-1' + ' points-' + dataFinal.class} src={flower_1} alt="Гедеон Рихтер" />
+            <img className={'final-flower final-flower-2' + ' points-' + dataFinal.class} src={flower_2} alt="Гедеон Рихтер" />
+            <img className={'final-flower final-flower-3' + ' points-' + dataFinal.class} src={flower_3} alt="Гедеон Рихтер" />
             <div className="final-wrap">
                 <div className="final-img">
                     <img src={dataFinal.img} alt="Гедеон Рихтер" />
