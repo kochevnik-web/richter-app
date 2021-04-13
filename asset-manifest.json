@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/richter-app/static/css/main.6e8a4261.chunk.css",
-    "main.js": "/richter-app/static/js/main.ec95f436.chunk.js",
-    "main.js.map": "/richter-app/static/js/main.ec95f436.chunk.js.map",
+    "main.js": "/richter-app/static/js/main.d473143f.chunk.js",
+    "main.js.map": "/richter-app/static/js/main.d473143f.chunk.js.map",
     "runtime-main.js": "/richter-app/static/js/runtime-main.e8089a85.js",
     "runtime-main.js.map": "/richter-app/static/js/runtime-main.e8089a85.js.map",
     "static/js/2.5509595b.chunk.js": "/richter-app/static/js/2.5509595b.chunk.js",
@@ -59,6 +59,6 @@
     "static/js/runtime-main.e8089a85.js",
     "static/js/2.5509595b.chunk.js",
     "static/css/main.6e8a4261.chunk.css",
-    "static/js/main.ec95f436.chunk.js"
+    "static/js/main.d473143f.chunk.js"
   ]
 }
