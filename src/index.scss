@@ -171,7 +171,8 @@ footer {
             font-size: 2.6em;
 
             a {
-                color: $blue;
+                color: $black;
+                font-weight: 600;
                 text-decoration: underline;
 
                 &:hover {
@@ -520,6 +521,16 @@ footer {
 
         span {
             font-size: 2.4em;
+
+            a {
+                color: $black;
+                font-weight: 600;
+                text-decoration: underline;
+
+                &:hover{
+                    text-decoration: none;
+                }
+            }
         }
     }
 }
@@ -798,6 +809,16 @@ footer {
         p {
             font-size: 2.6em;
             margin-bottom: 1.8em;
+
+            a {
+                color: $black;
+                font-weight: 600;
+                text-decoration: underline;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
         }
     }
 
