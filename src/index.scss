@@ -171,12 +171,12 @@ footer {
             font-size: 2.6em;
 
             a {
-                color: $black;
+                color: $blue;
                 font-weight: 600;
-                text-decoration: underline;
+                border-bottom: 1px solid $blue;
 
                 &:hover {
-                    text-decoration: none;
+                    border-bottom: 1px solid transparent;
                 }
             }
         }
@@ -523,12 +523,12 @@ footer {
             font-size: 2.4em;
 
             a {
-                color: $black;
+                color: $blue;
                 font-weight: 600;
-                text-decoration: underline;
+                border-bottom: 1px solid $blue;
 
-                &:hover{
-                    text-decoration: none;
+                &:hover {
+                    border-bottom: 1px solid transparent;
                 }
             }
         }
@@ -815,12 +815,12 @@ footer {
             margin-bottom: 1.8em;
 
             a {
-                color: $black;
+                color: $blue;
                 font-weight: 600;
-                text-decoration: underline;
+                border-bottom: 1px solid $blue;
 
                 &:hover {
-                    text-decoration: none;
+                    border-bottom: 1px solid transparent;
                 }
             }
         }
