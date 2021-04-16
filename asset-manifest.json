@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/richter-app/static/css/main.13d1145b.chunk.css",
+    "main.css": "/richter-app/static/css/main.2fc07ba2.chunk.css",
     "main.js": "/richter-app/static/js/main.a160eb21.chunk.js",
     "main.js.map": "/richter-app/static/js/main.a160eb21.chunk.js.map",
     "runtime-main.js": "/richter-app/static/js/runtime-main.e8089a85.js",
@@ -8,7 +8,7 @@
     "static/js/2.d7ad6ddc.chunk.js": "/richter-app/static/js/2.d7ad6ddc.chunk.js",
     "static/js/2.d7ad6ddc.chunk.js.map": "/richter-app/static/js/2.d7ad6ddc.chunk.js.map",
     "index.html": "/richter-app/index.html",
-    "static/css/main.13d1145b.chunk.css.map": "/richter-app/static/css/main.13d1145b.chunk.css.map",
+    "static/css/main.2fc07ba2.chunk.css.map": "/richter-app/static/css/main.2fc07ba2.chunk.css.map",
     "static/js/2.d7ad6ddc.chunk.js.LICENSE.txt": "/richter-app/static/js/2.d7ad6ddc.chunk.js.LICENSE.txt",
     "static/media/bathroom.cf68b2b3.svg": "/richter-app/static/media/bathroom.cf68b2b3.svg",
     "static/media/mobile.scss": "/richter-app/static/media/bg.1b17647e.png",
@@ -58,7 +58,7 @@
   "entrypoints": [
     "static/js/runtime-main.e8089a85.js",
     "static/js/2.d7ad6ddc.chunk.js",
-    "static/css/main.13d1145b.chunk.css",
+    "static/css/main.2fc07ba2.chunk.css",
     "static/js/main.a160eb21.chunk.js"
   ]
 }
