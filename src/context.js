@@ -17,8 +17,8 @@ export default function ContextProvider({ children }) {
     }
 
     const defaultEm = window.innerWidth <= 768 ? 1.731707 : 2.17734;
-    const [em, setEm] = useState(10);
-    const [isMobile, setIsMobile] = useState(false);
+    const [em, setEm] = useState(getEm());
+    const [isMobile, setIsMobile] = useState(getIsMobile());
     const [count, setCount] = useState(0);
     const [countLevel, setCountLevel] = useState(0);
 
